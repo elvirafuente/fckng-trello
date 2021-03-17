@@ -1,38 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #282c34;
+  color: white;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  min-height: 100vh;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dragNdrop {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 0.5rem;
+  padding: 0.5rem;
+  align-items: flex-start;
+}
+
+.dnd__group {
+  background-color: #4d5463;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.dnd__group-title{
+  margin-bottom: 0.5rem;
+}
+
+.dnd__item {
+  text-align: center;
+  background-color: #bfc5d3;
+  color: rgb(43, 38, 38);
+  border-radius: 5px;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dnd__item:not(:last-of-type){
+  margin-bottom: 0.5rem;
 }
