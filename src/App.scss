@@ -1,0 +1,27 @@
+.app {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #282c34;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;    
+  
+  &__icon {
+    font-size: 40px;
+  }
+
+  &__text {
+    font-size: 50px;
+  }
+}
+
+.drag{
+  &__item {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+  }
+}
